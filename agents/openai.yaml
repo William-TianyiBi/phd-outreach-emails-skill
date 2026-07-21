@@ -1,0 +1,4 @@
+interface:
+  display_name: "PhD Outreach Emails"
+  short_description: "Draft PhD outreach emails"
+  default_prompt: "Find relevant manipulation/UMI faculty and PhD students, then draft concise outreach emails with To and Cc fields."
