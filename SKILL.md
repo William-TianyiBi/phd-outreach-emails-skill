@@ -17,6 +17,8 @@ Read `references/tianyi-profile.md` before drafting emails. Use it for backgroun
 
 Read `references/source-quality.md` before evaluating evidence, uncertainty, funding, lab membership, student background, or demographic information. If an official page is blocked, JavaScript-only, login-gated, timed out, or partially readable, read `references/blocked-page-fallbacks.md` before concluding anything is unavailable.
 
+Read `references/hong-kong-batch-outreach.md` before building or revising a Hong Kong/GBA outreach batch, especially when Tianyi asks to finish Hong Kong targets in 4-5 days, avoid repeated departments, or combine Fall 2027 PhD outreach with Fall 2026 RA / visiting-research inquiries.
+
 ## Workflow
 
 1. Clarify only if the target scope is missing. Defaults: manipulation, UMI-style data collection, tactile/force-feedback teleoperation, robot learning, dexterous manipulation; regions include Hong Kong, Singapore, United States, Saudi Arabia; opportunity is Fall 2027 PhD.
@@ -27,6 +29,20 @@ Read `references/source-quality.md` before evaluating evidence, uncertainty, fun
 6. Draft mail with `To: PhD student` and `Cc: professor`. If no suitable student is found, draft `To: professor` and note why.
 7. Keep each email short: 180-260 words unless the user requests otherwise. Use concrete overlap with the lab, not generic praise.
 8. Include the CV/homepage attachment/link line only if the user asks, or if there is already a known CV/homepage link in context.
+
+## Hong Kong Batch Mode
+
+Use Hong Kong batch mode when the request mentions Hong Kong schools, HKUST, HKUST(GZ), CUHK, CUHK(SZ), HKU, PolyU, CityUHK, GBA campuses, or a 4-5 day Hong Kong outreach plan.
+
+Follow `references/hong-kong-batch-outreach.md` for:
+
+- the default five-school scope,
+- folder/file structure,
+- 4-5 day scheduling,
+- department-diversity rules,
+- PhD + RA wording,
+- student-first versus professor-direct routing,
+- and the 12 clarification questions for Tianyi.
 
 ## Dossier Mode
 
