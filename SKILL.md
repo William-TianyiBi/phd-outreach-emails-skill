@@ -1,13 +1,13 @@
 ---
 name: phd-outreach-emails
-description: Use when researching PhD faculty targets, lab PhD students, professor/student emails, professor dossiers, PI due diligence, or drafting academic outreach emails for manipulation, UMI, embodied AI, robotics, RA, summer research, or 27fall PhD opportunities.
+description: Use when researching PhD faculty targets, lab PhD students, lab funding, professor/student emails, professor dossiers, PI due diligence, or drafting student-first academic outreach emails for manipulation, UMI, embodied AI, robotics, RA, summer research, or 27fall PhD opportunities.
 ---
 
 # PhD Outreach Emails
 
 ## Purpose
 
-Prepare evidence-based PhD outreach packages for Tianyi Bi. The output is a contact table and concise email drafts. Do not send email unless Tianyi explicitly asks after reviewing the draft.
+Prepare evidence-based PhD outreach packages for Tianyi Bi. Default to student-first outreach after checking lab fit, current students, and funding visibility. Do not send email unless Tianyi explicitly asks after reviewing the draft.
 
 This skill also handles one-professor due diligence dossiers for PhD outreach decisions. Use dossier mode when the user asks to evaluate a professor, decide whether a professor is worth contacting, perform 导师调研, inspect funding/lab composition/student backgrounds/recruiting signals, or create a professor dossier.
 
@@ -17,18 +17,22 @@ Read `references/tianyi-profile.md` before drafting emails. Use it for backgroun
 
 Read `references/source-quality.md` before evaluating evidence, uncertainty, funding, lab membership, student background, or demographic information. If an official page is blocked, JavaScript-only, login-gated, timed out, or partially readable, read `references/blocked-page-fallbacks.md` before concluding anything is unavailable.
 
-Read `references/hong-kong-batch-outreach.md` before building or revising a Hong Kong/GBA outreach batch, especially when Tianyi asks to finish Hong Kong targets in 4-5 days, avoid repeated departments, or combine Fall 2027 PhD outreach with Fall 2026 RA / visiting-research inquiries.
+Read `references/lab-funding-search.md` before building a new outreach batch, adding professor targets after the initial school list, or marking lab funding as `Low`, `Medium`, `High`, or `Unknown`.
+
+Read `references/hong-kong-batch-outreach.md` before building or revising a Hong Kong/GBA outreach batch, especially when Tianyi asks for HKUST, CUHK, HKUST(GZ), HKU, PolyU, CityUHK Dongguan, or CUHK(SZ) targets.
 
 ## Workflow
 
 1. Clarify only if the target scope is missing. Defaults: manipulation, UMI-style data collection, tactile/force-feedback teleoperation, robot learning, dexterous manipulation; regions include Hong Kong, Singapore, United States, Saudi Arabia; opportunity is Fall 2027 PhD.
-2. Research targets from primary sources first: faculty/lab pages, university profiles, lab people pages, paper pages, Google Scholar, official PDFs. Browse because people, students, and emails change.
-3. For each professor, identify one relevant current PhD student or senior lab member when possible. Prefer students who work on manipulation, imitation learning, teleoperation, UMI/datasets, tactile sensing, dexterous hands, or sim-to-real.
-4. Verify every email address from an official or lab-controlled page. If unverified, mark it `not found`; do not guess email formats.
-5. For every target, provide at least one homepage-style evidence URL: lab website, professor's university profile, professor's personal homepage, student's university profile, or student's personal homepage. Do not rely only on search snippets, paper pages, or source names when a homepage can be found.
-6. Draft mail with `To: PhD student` and `Cc: professor`. If no suitable student is found, draft `To: professor` and note why.
-7. Keep each email short: 180-260 words unless the user requests otherwise. Use concrete overlap with the lab, not generic praise.
-8. Include the CV/homepage attachment/link line only if the user asks, or if there is already a known CV/homepage link in context.
+2. Research targets from primary sources first: faculty/lab pages, university profiles, lab people pages, recruiting/join pages, paper pages, Google Scholar, official PDFs, and official funding databases. Browse because people, students, funding, and emails change.
+3. For each professor, reverse-research the lab before drafting: current directions, active/current PhD students, recent student intake, visible funding, recruiting signals, and whether the lab is worth contacting now.
+4. Identify one relevant current PhD student or senior lab member when possible. Prefer students who work on manipulation, imitation learning, teleoperation, UMI/datasets, tactile sensing, dexterous hands, or sim-to-real.
+5. If Tianyi asks for Chinese students, search for public China-background or Chinese-language signals, but do not infer nationality, ethnicity, citizenship, or language ability from name, photo, or appearance. If no public signal is found, use the strongest research-fit student and mark the China-background search `not found`.
+6. Verify every email address from an official or lab-controlled page. If unverified, mark it `not found`; do not guess email formats.
+7. For every target, provide homepage-style evidence URLs and a funding snapshot with evidence status/risk. Do not rely only on search snippets, paper pages, or source names when a homepage or official database record can be found.
+8. Draft mail with `To: PhD student` and `Cc: professor`. If no suitable verified student is found, draft `To: professor` and note why.
+9. Keep each email short: 180-260 words unless the user requests otherwise. Use concrete overlap with the lab, not generic praise.
+10. Include the CV/homepage attachment/link line only if the user asks, or if there is already a known CV/homepage link in context.
 
 ## Hong Kong Batch Mode
 
@@ -36,13 +40,13 @@ Use Hong Kong batch mode when the request mentions Hong Kong schools, HKUST, HKU
 
 Follow `references/hong-kong-batch-outreach.md` for:
 
-- the default five-school scope,
+- the selected Hong Kong/GBA school scope,
 - folder/file structure,
-- 4-5 day scheduling,
-- department-diversity rules,
-- PhD + RA wording,
+- compact batch scheduling,
+- school/campus independence rules,
+- Fall 2027 PhD-only wording,
 - student-first versus professor-direct routing,
-- and the 12 clarification questions for Tianyi.
+- and remaining clarification questions for Tianyi.
 
 ## Dossier Mode
 
@@ -79,10 +83,10 @@ Return two sections:
 
 **Contact Table**
 
-| Priority | Professor | Institution | Fit | PhD student To | Professor Cc | Evidence |
-|---|---|---|---|---|---|---|
+| Priority | Professor | Institution | Lab/Funding | Fit | PhD student To | Professor Cc | Evidence |
+|---|---|---|---|---|---|---|---|
 
-Fit is one sentence. Evidence must include direct homepage-style links: lab website, professor's university profile, professor's personal homepage, student's university profile, or student's personal homepage. Mark uncertain data explicitly.
+Fit is one sentence. `Lab/Funding` is one compact snapshot with evidence status and risk, such as `Confirmed active NSF grant through 2027; funding risk Low` or `No active public grants found in searched sources; funding risk Unknown`. Evidence must include direct homepage-style links and funding/source links when available. Mark uncertain data explicitly.
 
 **Draft Emails**
 

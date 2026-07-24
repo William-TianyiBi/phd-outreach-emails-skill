@@ -1,18 +1,20 @@
 # Hong Kong Batch Outreach Rule
 
-Use this reference when Tianyi asks to organize Hong Kong faculty outreach, Hong Kong/GBA professor pools, or a 4-5 day Hong Kong batch schedule.
+Use this reference when Tianyi asks to organize Hong Kong faculty outreach, Hong Kong/GBA professor pools, or a compact Hong Kong batch schedule.
 
 ## Default Scope
 
-Default target schools:
+Default target schools, treated as independent schools/campuses:
 
 - HKUST
-- HKUST(GZ)
 - CUHK
-- CUHK(SZ)
+- HKUST(GZ)
 - HKU
+- PolyU
+- CityUHK Dongguan / CityU Dongguan
+- CUHK(SZ)
 
-If Tianyi explicitly includes PolyU, PolyU Dongguan, CityUHK, or other Hong Kong/GBA schools, include them as an expanded batch rather than silently replacing the five-school default.
+Treat all campuses above independently for scheduling and grouping. If Tianyi writes `CUHKGZ`, interpret it as a likely shorthand/typo and verify whether he means `HKUST(GZ)` before using it as a school label in final files.
 
 ## Candidate Pool Rule
 
@@ -49,17 +51,16 @@ Evidence:
 
 ## Scheduling Rule
 
-Goal: finish the reachable Hong Kong batch in 4-5 days.
+Goal: collect and draft all reachable Hong Kong/GBA targets in one complete batch, even if the final count exceeds 30.
 
 Default cadence:
 
-- 4-day plan when there are 16 or fewer ready/sendable targets.
-- 5-day plan when there are 17-25 ready/sendable targets.
+- Do not hard-limit daily volume while building the faculty pool.
+- If daily sending files are requested, split the final ready pool into a compact multi-day schedule after the pool is complete.
 - Put lower-confidence or form-only targets into `hold_or_form_only.md`, not into daily send files.
-- Avoid repeating the same school on the same day when possible.
-- Avoid repeating the same department on the same day when possible.
-- If school diversity and department diversity conflict, prioritize department diversity inside each day.
-- Keep daily volume balanced; do not overfill one day while later days are sparse.
+- Same-school repetition on the same day is allowed.
+- Department repetition is not important for this batch.
+- If volume and `roughly 30 emails` conflict, lower the fit threshold and finish the whole selected pool rather than stopping at 30.
 
 Default daily structure:
 
@@ -79,22 +80,21 @@ Daily rule:
 
 ## Email Intent
 
-Each draft should ask about both:
+Each draft should ask only about:
 
 - Fall 2027 PhD opportunities.
-- Fall 2026 RA opportunity, research assistantship, visiting research, or pre-PhD research opportunity when appropriate.
 
 Default wording:
 
 ```text
-I am writing to ask whether your group may have Fall 2027 PhD opportunities, or whether there may be a Fall 2026 RA / visiting research opportunity through which I could contribute to the group before applying.
+I am writing to ask whether your group may have Fall 2027 PhD opportunities related to [specific lab topic].
 ```
 
-Use `Fall 2026 RA / visiting research` only when the lab has a plausible current project, visible student activity, or recruiting signal. If RA looks unlikely, keep the PhD question primary and mention RA as a secondary possibility.
+Do not mention Fall 2026 RA, visiting research, research assistantship, internship, or pre-PhD research unless Tianyi explicitly reopens that scope in a later request.
 
 ## Route Rule
 
-Default to student-first only when a current PhD student or senior lab member has a verified public email and strong topic overlap.
+Default to student-first with professor Cc when a current PhD student or senior lab member has a verified public email and strong topic overlap.
 
 Use professor-direct when:
 
@@ -117,26 +117,34 @@ Write in polished English by default.
 Make the email practical and opportunity-oriented:
 
 - One sentence identity and timeline.
-- One sentence asking about Fall 2027 PhD and possible Fall 2026 RA / visiting research.
+- One sentence asking about Fall 2027 PhD.
 - One paragraph with 1-2 strongest background points.
 - One paragraph with concrete lab overlap.
+- One sentence with Tianyi's personal webpage link when available.
 - One closing sentence asking whether the route is worth discussing.
 
 Do not overuse broad phrases like `embodied AI` unless the lab actually uses the concept or has robot learning/VLA/VTLA/manipulation overlap.
 
-## Twelve Clarification Questions For Tianyi
+## Fit Rule
+
+No priority order among mechanical engineering, ECE/EE, robotics, CS, AI, VLA, VLM, or manipulation if the lab clearly works on at least one of:
+
+- VLA / vision-language-action models
+- VLMs with robot/embodied deployment relevance
+- robot manipulation
+- robot learning
+- embodied AI with physical robot tasks
+- tactile/visuo-tactile/multimodal manipulation policy learning
+
+Do not prioritize China-background search for this batch. Most target schools are in Hong Kong/GBA; use research fit and contactability instead.
+
+## Remaining Clarification Questions For Tianyi
 
 Ask these when building or revising a Hong Kong batch if the answers are not already known:
 
-1. 这次“五个学校”是否固定为 HKUST、HKUST(GZ)、CUHK、CUHK(SZ)、HKU，还是要把 PolyU 也纳入主批次？
-2. HKUST(GZ) 和 CUHK(SZ) 是否按独立学校处理，还是分别归入 HKUST / CUHK 做同校去重？
-3. 每天你希望最多发几封？如果 4-5 天发完，默认每天 4-6 封是否可以接受？
-4. 是否允许同一天发同一学校但不同系的老师，还是同一天必须完全避免同校？
-5. “系不重复”的优先级是否高于“学校不重复”？例如同一天可以 HKUST ECE + HKUST CSE 吗？
-6. 你更想优先套机械/电子/机器人系的老师，还是 CS/AI 方向的 embodied AI/VLA 老师也同等优先？
-7. 26 Fall RA 是远程 RA、线下 visiting research、gap-year RA，还是暑研/短期 research internship 都可以？
-8. 如果老师明确只收 PhD、不提 RA，邮件里还要不要提 26 Fall RA？
-9. 这批邮件是否优先发给教授本人，还是仍然优先找实验室博士生并 Cc 教授？
-10. 是否优先找有中国大陆教育/工作背景或中文页面的老师，还是只要在香港学校、方向合适就可以？
-11. 邮件是否需要加入 CV/homepage/Google Scholar/GitHub 链接或附件提醒？
-12. 如果 4-5 天排不完所有合适老师，剩余人选应该进入 overflow，还是降低 fit 阈值一次性排完？
+1. `CUHKGZ` 是否实际指 `HKUST(GZ)`？最终文件里需要统一成哪个学校名？
+2. CityUHK Dongguan 是否只收东莞校区老师，还是 CityUHK 香港主校区也一起纳入？
+3. PolyU 是否只包括香港理工大学主校区，还是也要单列 PolyU Dongguan / 大湾区相关平台？
+4. 你的个人网页 URL 具体是哪一个？邮件正文应直接写 `My homepage is ...` 还是放在签名下方？
+5. 学生 first 的学生选择是否优先找 current PhD，还是 postdoc / research assistant / lab manager 也可以作为 To？
+6. 对低阈值一次性排完的下限是什么：只要 VLM/VLA/机器人沾边就收，还是必须能写出至少一句和 UMI/tactile/manipulation 的具体连接？
