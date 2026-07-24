@@ -8,13 +8,14 @@ Default target schools, treated as independent schools/campuses:
 
 - HKUST
 - CUHK
-- HKUST(GZ)
 - HKU
 - PolyU
+- PolyU Dongguan / PolyU Greater Bay Area related platforms
+- CityUHK
 - CityUHK Dongguan / CityU Dongguan
 - CUHK(SZ)
 
-Treat all campuses above independently for scheduling and grouping. If Tianyi writes `CUHKGZ`, interpret it as a likely shorthand/typo and verify whether he means `HKUST(GZ)` before using it as a school label in final files.
+Treat all campuses above independently for scheduling and grouping. Do not include `CUHKGZ`; Tianyi has marked it as unclear/out of scope. Include `HKUST(GZ)` only if Tianyi explicitly names `HKUST(GZ)` in a later request.
 
 ## Candidate Pool Rule
 
@@ -120,7 +121,8 @@ Make the email practical and opportunity-oriented:
 - One sentence asking about Fall 2027 PhD.
 - One paragraph with 1-2 strongest background points.
 - One paragraph with concrete lab overlap.
-- One sentence with Tianyi's personal webpage link when available.
+- Do not include Tianyi's sparse GitHub homepage link in the email body by default.
+- Assume Tianyi will paste or attach his CV manually unless he explicitly asks for a CV attachment line.
 - One closing sentence asking whether the route is worth discussing.
 
 Do not overuse broad phrases like `embodied AI` unless the lab actually uses the concept or has robot learning/VLA/VTLA/manipulation overlap.
@@ -136,15 +138,18 @@ No priority order among mechanical engineering, ECE/EE, robotics, CS, AI, VLA, V
 - embodied AI with physical robot tasks
 - tactile/visuo-tactile/multimodal manipulation policy learning
 
+For low-threshold expansion, include a target only when the email can still name one concrete technical bridge to Tianyi's background, such as manipulation data collection, tactile/force feedback, teleoperation, robot policy learning, simulation setup, dexterous hands, VLA/VLM-for-robotics, or embodied deployment. If the only overlap is broad AI/ML/CV/NLP with no robotics or embodied/manipulation bridge, put the target in `hold_or_form_only.md` or skip it.
+
 Do not prioritize China-background search for this batch. Most target schools are in Hong Kong/GBA; use research fit and contactability instead.
+
+## Resolved Preferences
+
+- CityUHK Hong Kong main campus and CityUHK Dongguan should be researched together but treated as independent school/campus labels.
+- PolyU Hong Kong main campus and PolyU Dongguan / Greater Bay Area related platforms should be researched together but treated as independent school/campus labels.
+- Student-first routing is limited to current PhD students. Do not use postdocs, research assistants, lab managers, alumni, master's students, or visiting students as the primary `To` contact unless Tianyi explicitly allows it later.
+- If no suitable current PhD student email is verified, draft professor-direct.
+- Do not add Tianyi's GitHub homepage link to the email body by default; Tianyi will paste or attach his CV manually.
 
 ## Remaining Clarification Questions For Tianyi
 
-Ask these when building or revising a Hong Kong batch if the answers are not already known:
-
-1. `CUHKGZ` 是否实际指 `HKUST(GZ)`？最终文件里需要统一成哪个学校名？
-2. CityUHK Dongguan 是否只收东莞校区老师，还是 CityUHK 香港主校区也一起纳入？
-3. PolyU 是否只包括香港理工大学主校区，还是也要单列 PolyU Dongguan / 大湾区相关平台？
-4. 你的个人网页 URL 具体是哪一个？邮件正文应直接写 `My homepage is ...` 还是放在签名下方？
-5. 学生 first 的学生选择是否优先找 current PhD，还是 postdoc / research assistant / lab manager 也可以作为 To？
-6. 对低阈值一次性排完的下限是什么：只要 VLM/VLA/机器人沾边就收，还是必须能写出至少一句和 UMI/tactile/manipulation 的具体连接？
+No clarification questions are required by default for this batch. Continue with the resolved preferences above unless Tianyi changes the scope.
